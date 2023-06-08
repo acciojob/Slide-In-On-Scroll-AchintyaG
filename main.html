@@ -60,7 +60,7 @@
 		  function handleSlide() {
             var scrolledImges = document.querySelectorAll('.slide-in');
             scrolledImges.forEach((img) => {
-                    var scrolledHeight = window.scrollY + window.innerHeight - img.height/4 ;
+                    var scrolledHeight = (window.scrollY + window.innerHeight - img.height)/ 2;
                     var imageBottomHeight = img.offsetTop + img.height;
                     var isImageFullyScrolled = scrolledHeight > imageBottomHeight;
                     var isImageHalfScrolled = scrolledHeight > img.offsetTop;
